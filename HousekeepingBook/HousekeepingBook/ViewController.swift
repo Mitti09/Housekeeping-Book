@@ -11,20 +11,21 @@ import FSCalendar
 class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,UITableViewDataSource,UITableViewDelegate {
 
 //** IBOutlet
-    @IBOutlet weak var calendar: FSCalendar!
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var tableView: UITableView!
-
+    @IBOutlet private weak var calendar: FSCalendar!
+    @IBOutlet private weak var dateLabel: UILabel!
+    @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var createLogButton: UIButton!
+    
 //** LifeCycle
 
     override func viewDidLoad() {
-        initDateLabel()
         super.viewDidLoad()
+        initDateLabel()
         
         // Do any additional setup after loading the view.
     }
 
-//** Propatiy
+//** Propatiy 後々配列をボタンで作成したものに変更する
     var list = ["月曜","火曜","水曜"]
     let df = DateFormatter()
     
