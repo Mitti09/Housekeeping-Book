@@ -24,6 +24,7 @@ class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,U
 
 //** Propatiy
     var list = ["月曜","火曜","水曜"]
+    let df = DateFormatter()
     
 //** MARK ** private func
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -34,6 +35,11 @@ class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,U
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return list.count
+    }
+    
+    func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+        df.dateFormat = "yyyy/MM/dd"
+        dateLabel.text = df.string(from: date)
     }
 
 
