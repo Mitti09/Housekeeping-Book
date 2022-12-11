@@ -18,7 +18,9 @@ class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,U
 //** LifeCycle
 
     override func viewDidLoad() {
+        initDateLabel()
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
     }
 
@@ -43,5 +45,15 @@ class ViewController: UIViewController,FSCalendarDataSource,FSCalendarDelegate,U
     }
 
 
+}
+
+//** MARK ** private Extension
+extension ViewController {
+    func initDateLabel() {
+        if dateLabel.text == "" {
+        df.dateFormat = "yyyy/MM/dd"
+        dateLabel.text = df.string(from: Date())
+        }
+    }
 }
 
