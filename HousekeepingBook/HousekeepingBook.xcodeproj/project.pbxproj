@@ -14,6 +14,8 @@
 		39A349D6293D618700A244BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39A349D4293D618700A244BC /* Main.storyboard */; };
 		39A349D8293D618900A244BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39A349D7293D618900A244BC /* Assets.xcassets */; };
 		39A349DB293D618900A244BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39A349D9293D618900A244BC /* LaunchScreen.storyboard */; };
+		39A349E42947ECA100A244BC /* CalendarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A349E22947ECA100A244BC /* CalendarTableViewCell.swift */; };
+		39A349E52947ECA100A244BC /* CalendarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39A349E32947ECA100A244BC /* CalendarTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		39A349D7293D618900A244BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39A349DA293D618900A244BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39A349DC293D618900A244BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39A349E22947ECA100A244BC /* CalendarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableViewCell.swift; sourceTree = "<group>"; };
+		39A349E32947ECA100A244BC /* CalendarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarTableViewCell.xib; sourceTree = "<group>"; };
 		C67F51F216AC217BF671DC6A /* Pods-HousekeepingBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HousekeepingBook.release.xcconfig"; path = "Target Support Files/Pods-HousekeepingBook/Pods-HousekeepingBook.release.xcconfig"; sourceTree = "<group>"; };
 		DC384B3A0A58778E97ECB645 /* Pods-HousekeepingBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HousekeepingBook.debug.xcconfig"; path = "Target Support Files/Pods-HousekeepingBook/Pods-HousekeepingBook.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,11 +79,21 @@
 				39A349D0293D618700A244BC /* SceneDelegate.swift */,
 				39A349D2293D618700A244BC /* ViewController.swift */,
 				39A349D4293D618700A244BC /* Main.storyboard */,
+				39A349E72947ECCF00A244BC /* Cell */,
 				39A349D7293D618900A244BC /* Assets.xcassets */,
 				39A349D9293D618900A244BC /* LaunchScreen.storyboard */,
 				39A349DC293D618900A244BC /* Info.plist */,
 			);
 			path = HousekeepingBook;
+			sourceTree = "<group>";
+		};
+		39A349E72947ECCF00A244BC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				39A349E22947ECA100A244BC /* CalendarTableViewCell.swift */,
+				39A349E32947ECA100A244BC /* CalendarTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		9AC67C72508CFA2BF694A4CF /* Pods */ = {
@@ -88,7 +102,6 @@
 				DC384B3A0A58778E97ECB645 /* Pods-HousekeepingBook.debug.xcconfig */,
 				C67F51F216AC217BF671DC6A /* Pods-HousekeepingBook.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -155,6 +168,7 @@
 				39A349DB293D618900A244BC /* LaunchScreen.storyboard in Resources */,
 				39A349D8293D618900A244BC /* Assets.xcassets in Resources */,
 				39A349D6293D618700A244BC /* Main.storyboard in Resources */,
+				39A349E52947ECA100A244BC /* CalendarTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +224,7 @@
 				39A349D3293D618700A244BC /* ViewController.swift in Sources */,
 				39A349CF293D618700A244BC /* AppDelegate.swift in Sources */,
 				39A349D1293D618700A244BC /* SceneDelegate.swift in Sources */,
+				39A349E42947ECA100A244BC /* CalendarTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
